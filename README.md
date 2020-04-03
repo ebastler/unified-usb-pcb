@@ -4,9 +4,6 @@
 None of the designs in this repo are tested (or even finished) yet. It is currently only used as a backup of the work in progress.
 
 TBD:
- * Li-Ion PCB: choose values for voltage divider of thermistor
- * Li-Ion PCB: connect the 5pin header
- * Li-Ion PCB: connect the charge sense pin
  * Li-Ion PCB: create PCB layout
  * Supercap PCB: create schematic
  * Supercap PCB: create PCB layout
