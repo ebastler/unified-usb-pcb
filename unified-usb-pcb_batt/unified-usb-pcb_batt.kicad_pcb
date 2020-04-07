@@ -590,10 +590,10 @@
     (pad "" np_thru_hole circle (at 2.89 -2.6 180) (size 0.65 0.65) (drill 0.65) (layers *.Cu *.Mask))
     (pad S1 thru_hole oval (at 4.32 1.05 180) (size 1 1.6) (drill oval 0.6 1.2) (layers *.Cu *.Mask)
       (net 19 "Net-(J2-PadS1)"))
-    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
-      (at (xyz 0 0 0))
+    (model "${KIPRJMOD}/../Type-C.pretty/HRO  TYPE-C-31-M-12.step"
+      (offset (xyz -4.4958 -3.6322 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
