@@ -354,7 +354,7 @@
       (net 21 "Net-(J4-Pad1)"))
     (pad 1 smd rect (at 1.7 2.54 180) (size 3.5 1.5) (layers B.Cu B.Paste B.Mask)
       (net 31 "Net-(SW1-Pad1)"))
-    (model ${KIPRJMOD}/../3d/ESP3020.step
+    (model ${KIPRJMOD}/../kicad-keyboard-parts.pretty/ESP3020.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
