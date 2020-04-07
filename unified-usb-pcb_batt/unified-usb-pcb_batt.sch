@@ -36,33 +36,9 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2850 1750 50  0001 C 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 1700 2150 1650
-Wire Wire Line
-	2150 1650 2350 1650
-Wire Wire Line
-	2150 1800 2150 1850
-Wire Wire Line
-	2150 1850 2350 1850
-Wire Wire Line
 	1700 1900 1700 1800
-Connection ~ 1700 1800
 Wire Wire Line
 	1700 1600 1700 1700
-Connection ~ 1700 1700
-Wire Wire Line
-	2350 1850 2350 2300
-Wire Wire Line
-	2350 2300 3350 2300
-Wire Wire Line
-	3350 2300 3350 1850
-Connection ~ 2350 1850
-Wire Wire Line
-	2350 1650 2350 1200
-Wire Wire Line
-	2350 1200 3350 1200
-Wire Wire Line
-	3350 1200 3350 1650
-Connection ~ 2350 1650
 Wire Wire Line
 	2850 2250 2850 2600
 Wire Wire Line
@@ -131,10 +107,6 @@ Wire Wire Line
 	2850 1100 2850 1250
 Wire Wire Line
 	1950 1100 2850 1100
-Wire Wire Line
-	1700 1800 2150 1800
-Wire Wire Line
-	1700 1700 2150 1700
 $Comp
 L power:GNDPWR #PWR06
 U 1 1 5E891102
@@ -152,8 +124,8 @@ L Device:D_Schottky D1
 U 1 1 5E894B75
 P 3000 1100
 F 0 "D1" H 2850 1050 50  0000 C CNN
-F 1 "D_Schottky" H 2700 1150 50  0000 C CNN
-F 2 "" H 3000 1100 50  0001 C CNN
+F 1 "SS34" H 2700 1150 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 3000 1100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Vishay-Intertech-SS36-E3-57T_C35722.pdf" H 3000 1100 50  0001 C CNN
 	1    3000 1100
 	-1   0    0    1   
@@ -193,7 +165,7 @@ U 1 1 5E8AB5AC
 P 3900 3600
 F 0 "J4" H 3980 3592 50  0000 L CNN
 F 1 "BATT" H 3980 3501 50  0000 L CNN
-F 2 "" H 3900 3600 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 3900 3600 50  0001 C CNN
 F 3 "~" H 3900 3600 50  0001 C CNN
 	1    3900 3600
 	1    0    0    -1  
@@ -204,7 +176,7 @@ U 1 1 5E8ACF8D
 P 3400 4050
 F 0 "J5" H 3480 4042 50  0000 L CNN
 F 1 "THERM" H 3250 3850 50  0000 L CNN
-F 2 "" H 3400 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 3400 4050 50  0001 C CNN
 F 3 "~" H 3400 4050 50  0001 C CNN
 	1    3400 4050
 	1    0    0    -1  
@@ -215,7 +187,7 @@ U 1 1 5E8AD69B
 P 4350 1200
 F 0 "J1" H 4400 900 50  0000 C CNN
 F 1 "QI" H 4400 1000 50  0000 C CNN
-F 2 "" H 4350 1200 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 4350 1200 50  0001 C CNN
 F 3 "~" H 4350 1200 50  0001 C CNN
 	1    4350 1200
 	-1   0    0    1   
@@ -236,8 +208,8 @@ L Device:D_Schottky D2
 U 1 1 5E8B3E59
 P 5000 1100
 F 0 "D2" H 5000 884 50  0000 C CNN
-F 1 "D_Schottky" H 5000 975 50  0000 C CNN
-F 2 "" H 5000 1100 50  0001 C CNN
+F 1 "SS34" H 5000 975 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5000 1100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Vishay-Intertech-SS36-E3-57T_C35722.pdf" H 5000 1100 50  0001 C CNN
 	1    5000 1100
 	-1   0    0    1   
@@ -297,8 +269,8 @@ L Device:Polyfuse_Small F2
 U 1 1 5E8C5B51
 P 4700 1100
 F 0 "F2" V 4500 1000 50  0000 C CNN
-F 1 "1A" V 4600 1000 50  0000 C CNN
-F 2 "" H 4750 900 50  0001 L CNN
+F 1 "1206L050/15YR" V 4400 1000 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4750 900 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810252220_Fuzetec-Tech-FSMD050-1206-R_C220147.pdf" H 4700 1100 50  0001 C CNN
 	1    4700 1100
 	0    1    1    0   
@@ -332,8 +304,8 @@ L Device:LED_Small D3
 U 1 1 5E8D30E5
 P 650 3700
 F 0 "D3" H 700 3600 50  0000 R CNN
-F 1 "LED_GR" V 900 3700 50  0000 R CNN
-F 2 "" V 650 3700 50  0001 C CNN
+F 1 "19-217/GHC-YR1S2/3T" V 900 3700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 650 3700 50  0001 C CNN
 F 3 "~" V 650 3700 50  0001 C CNN
 	1    650  3700
 	0    -1   -1   0   
@@ -343,8 +315,8 @@ L Device:LED_Small D4
 U 1 1 5E8D541F
 P 1100 3700
 F 0 "D4" H 1150 3600 50  0000 R CNN
-F 1 "LED_R" V 1250 3900 50  0000 R CNN
-F 2 "" V 1100 3700 50  0001 C CNN
+F 1 "KT-0603R" V 1250 3900 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" V 1100 3700 50  0001 C CNN
 F 3 "~" V 1100 3700 50  0001 C CNN
 	1    1100 3700
 	0    -1   -1   0   
@@ -376,7 +348,7 @@ F 3 "" H 2550 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_2_Open JP2
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 5E8EA6C4
 P 3000 4250
 F 0 "JP2" H 2650 4300 50  0000 L CNN
@@ -404,14 +376,8 @@ F 3 "" H 1650 3500 50  0001 C CNN
 	1    1650 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3350 1650 3400 1650
-Connection ~ 3350 1650
-Wire Wire Line
-	3350 1850 3400 1850
-Connection ~ 3350 1850
 $Comp
-L Jumper:Jumper_2_Open JP1
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5E906293
 P 3050 900
 F 0 "JP1" H 3200 800 50  0000 C CNN
@@ -457,8 +423,6 @@ Wire Wire Line
 Connection ~ 2800 4450
 Wire Wire Line
 	2800 4150 2800 4050
-Wire Wire Line
-	2800 4050 3000 4050
 Connection ~ 2800 4050
 $Comp
 L power:+5V #PWR08
@@ -489,9 +453,6 @@ Wire Wire Line
 	3200 4450 3000 4450
 Connection ~ 3000 4450
 Wire Wire Line
-	3200 4050 3000 4050
-Connection ~ 3000 4050
-Wire Wire Line
 	3700 3700 3700 3850
 Wire Wire Line
 	3700 3850 4200 3850
@@ -514,7 +475,7 @@ U 1 1 5E986F3E
 P 4650 3600
 F 0 "C1" H 4350 3600 50  0000 L CNN
 F 1 "100n" H 4350 3500 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 4650 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4650 3600 50  0001 C CNN
 F 3 "~" H 4650 3600 50  0001 C CNN
 	1    4650 3600
 	1    0    0    -1  
@@ -594,7 +555,7 @@ U 1 1 5EA1E00B
 P 1650 3800
 F 0 "C4" V 1550 3650 50  0000 L CNN
 F 1 "100n" V 1550 3800 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 1650 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1650 3800 50  0001 C CNN
 F 3 "~" H 1650 3800 50  0001 C CNN
 	1    1650 3800
 	1    0    0    -1  
@@ -648,8 +609,8 @@ L Device:Polyfuse_Small F1
 U 1 1 5E887B14
 P 1850 1100
 F 0 "F1" V 1750 1200 50  0000 C CNN
-F 1 "1A" V 1750 1000 50  0000 C CNN
-F 2 "" H 1900 900 50  0001 L CNN
+F 1 "1206L050/15YR" V 1650 1350 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 1900 900 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810252220_Fuzetec-Tech-FSMD050-1206-R_C220147.pdf" H 1850 1100 50  0001 C CNN
 	1    1850 1100
 	0    1    1    0   
@@ -659,8 +620,8 @@ L Device:Polyfuse_Small F3
 U 1 1 5EABBE64
 P 4850 2200
 F 0 "F3" V 4800 2350 50  0000 C CNN
-F 1 "1A" V 4800 2050 50  0000 C CNN
-F 2 "" H 4900 2000 50  0001 L CNN
+F 1 "1206L050/15YR" V 4600 2200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4900 2000 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810252220_Fuzetec-Tech-FSMD050-1206-R_C220147.pdf" H 4850 2200 50  0001 C CNN
 	1    4850 2200
 	0    1    1    0   
@@ -753,10 +714,10 @@ Wire Wire Line
 Wire Wire Line
 	3200 4450 3650 4450
 $Comp
-L Jumper:Jumper_2_Open JP?
+L Jumper:Jumper_2_Bridged JP3
 U 1 1 5E8F2064
 P 3500 3600
-F 0 "JP?" H 3050 3750 50  0000 L CNN
+F 0 "JP3" H 3050 3750 50  0000 L CNN
 F 1 "disconnect batt" H 3050 3850 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 3600 50  0001 C CNN
 F 3 "~" H 3500 3600 50  0001 C CNN
@@ -783,4 +744,46 @@ Connection ~ 3300 3600
 Wire Wire Line
 	3250 3600 2550 3600
 Connection ~ 3250 3600
+Wire Wire Line
+	3000 4400 3000 4450
+Wire Wire Line
+	2800 4050 3000 4050
+Wire Wire Line
+	3000 4100 3000 4050
+Connection ~ 3000 4050
+Wire Wire Line
+	3000 4050 3200 4050
+Wire Wire Line
+	2900 900  2850 900 
+Wire Wire Line
+	3200 900  3250 900 
+Wire Wire Line
+	3350 1650 3350 1850
+Wire Wire Line
+	2350 1650 2350 1850
+Wire Wire Line
+	3400 1650 3350 1650
+Connection ~ 3350 1650
+Wire Wire Line
+	3350 1650 3350 1200
+Wire Wire Line
+	3350 1200 2300 1200
+Wire Wire Line
+	2300 1200 2300 1600
+Wire Wire Line
+	2300 1600 1700 1600
+Connection ~ 1700 1600
+Wire Wire Line
+	1700 1900 2350 1900
+Wire Wire Line
+	2350 1900 2350 1850
+Connection ~ 1700 1900
+Connection ~ 2350 1850
+Wire Wire Line
+	2350 1900 2350 2300
+Wire Wire Line
+	2350 2300 3400 2300
+Wire Wire Line
+	3400 2300 3400 1850
+Connection ~ 2350 1900
 $EndSCHEMATC

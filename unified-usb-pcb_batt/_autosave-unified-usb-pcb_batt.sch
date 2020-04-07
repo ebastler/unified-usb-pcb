@@ -160,17 +160,6 @@ USB_D-
 Text GLabel 3400 1850 2    50   BiDi ~ 0
 USB_D+
 $Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5E8AB5AC
-P 3900 3600
-F 0 "J4" H 3980 3592 50  0000 L CNN
-F 1 "BATT" H 3980 3501 50  0000 L CNN
-F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 3900 3600 50  0001 C CNN
-F 3 "~" H 3900 3600 50  0001 C CNN
-	1    3900 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5E8ACF8D
 P 3400 4050
@@ -452,12 +441,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 4450 3000 4450
 Connection ~ 3000 4450
-Wire Wire Line
-	3700 3700 3700 3850
-Wire Wire Line
-	3700 3850 4200 3850
-Wire Wire Line
-	4200 3850 4200 4100
 $Comp
 L Device:CP_Small C3
 U 1 1 5E8F81D1
@@ -475,7 +458,7 @@ U 1 1 5E986F3E
 P 4650 3600
 F 0 "C1" H 4350 3600 50  0000 L CNN
 F 1 "100n" H 4350 3500 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 4650 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4650 3600 50  0001 C CNN
 F 3 "~" H 4650 3600 50  0001 C CNN
 	1    4650 3600
 	1    0    0    -1  
@@ -545,17 +528,14 @@ Wire Wire Line
 	1650 3600 1800 3600
 Wire Wire Line
 	4650 3750 4200 3750
-Wire Wire Line
-	4200 3750 4200 3850
 Connection ~ 4650 3750
-Connection ~ 4200 3850
 $Comp
 L Device:C_Small C4
 U 1 1 5EA1E00B
 P 1650 3800
 F 0 "C4" V 1550 3650 50  0000 L CNN
 F 1 "100n" V 1550 3800 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 1650 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1650 3800 50  0001 C CNN
 F 3 "~" H 1650 3800 50  0001 C CNN
 	1    1650 3800
 	1    0    0    -1  
@@ -712,35 +692,12 @@ Wire Wire Line
 Wire Wire Line
 	1800 3800 1800 4000
 Wire Wire Line
-	3200 4450 3650 4450
-$Comp
-L Jumper:Jumper_2_Bridged JP3
-U 1 1 5E8F2064
-P 3500 3600
-F 0 "JP3" H 3050 3750 50  0000 L CNN
-F 1 "disconnect batt" H 3050 3850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3500 3600 50  0001 C CNN
-F 3 "~" H 3500 3600 50  0001 C CNN
-	1    3500 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3800 3250 3850
-Wire Wire Line
-	3250 3850 3650 3850
-Wire Wire Line
-	3650 3850 3650 4450
-Connection ~ 3650 4450
-Wire Wire Line
-	3650 4450 4250 4450
-Wire Wire Line
 	3700 3500 3300 3500
 Wire Wire Line
 	3300 3500 3300 3600
 Connection ~ 3700 3500
 Wire Wire Line
 	3300 3600 3250 3600
-Connection ~ 3300 3600
 Wire Wire Line
 	3250 3600 2550 3600
 Connection ~ 3250 3600
@@ -786,4 +743,45 @@ Wire Wire Line
 Wire Wire Line
 	3400 2300 3400 1850
 Connection ~ 2350 1900
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5E8D451D
+P 3500 3700
+F 0 "SW1" H 3500 3375 50  0000 C CNN
+F 1 "SW_SPDT" H 3500 3466 50  0000 C CNN
+F 2 "" H 3500 3700 50  0001 C CNN
+F 3 "~" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	-1   0    0    1   
+$EndComp
+Connection ~ 3300 3600
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5E8AB5AC
+P 3900 3700
+F 0 "J4" H 3980 3692 50  0000 L CNN
+F 1 "BATT" H 3980 3601 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 3900 3700 50  0001 C CNN
+F 3 "~" H 3900 3700 50  0001 C CNN
+	1    3900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3750 4200 4100
+Wire Wire Line
+	3700 3800 3700 4100
+Wire Wire Line
+	3700 4100 4200 4100
+Connection ~ 4200 4100
+Wire Wire Line
+	3200 4450 3600 4450
+Wire Wire Line
+	3250 3950 3600 3950
+Wire Wire Line
+	3600 3950 3600 4450
+Wire Wire Line
+	3250 3800 3250 3950
+Connection ~ 3600 4450
+Wire Wire Line
+	3600 4450 4250 4450
 $EndSCHEMATC

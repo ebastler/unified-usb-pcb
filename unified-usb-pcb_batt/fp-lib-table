@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name kicad-tp4056)(type KiCad)(uri C:/Users/mplattner/Documents/GitHub/kicad-tp4056.pretty)(options "")(descr ""))
 )
