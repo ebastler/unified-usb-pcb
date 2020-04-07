@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name TP4056)(type Legacy)(uri "C:/Users/mplattner/Documents/GitHub/kicad-tp4056.pretty/Schematic Library/TP4056.lib")(options "")(descr "Library containing three chips commonly used together for Li-Xx charging and protection"))
+  (lib (name kicad-keyboard-parts)(type Legacy)(uri "${KIPRJMOD}/../kicad-keyboard-parts.pretty/Schematic Library/kicad-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name unified-usb-pcb_batt-rescue)(type Legacy)(uri ${KIPRJMOD}/unified-usb-pcb_batt-rescue.lib)(options "")(descr ""))
 )
