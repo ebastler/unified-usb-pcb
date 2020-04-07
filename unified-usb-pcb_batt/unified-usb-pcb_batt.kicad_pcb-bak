@@ -436,10 +436,10 @@
       (net 11 "Net-(F2-Pad2)"))
     (pad 1 smd roundrect (at -0.5 -2 270) (size 0.6 1.55) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 3 GNDPWR))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/../3d/SM02B-SRSS-TB.step
+      (offset (xyz 0 1.27 -0.3048))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -1158,10 +1158,10 @@
       (net 3 GNDPWR))
     (pad 1 smd roundrect (at -0.5 -2 90) (size 0.6 1.55) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 22 "Net-(J5-Pad1)"))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/../3d/SM02B-SRSS-TB.step
+      (offset (xyz 0 1.27 -0.3048))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -1202,10 +1202,10 @@
       (net 1 "Net-(C1-Pad2)"))
     (pad 1 smd roundrect (at -0.5 -2 90) (size 0.6 1.55) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 21 "Net-(J4-Pad1)"))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/../3d/SM02B-SRSS-TB.step
+      (offset (xyz 0 1.27 -0.3048))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -1252,10 +1252,10 @@
       (net 16 USB_D+))
     (pad 1 smd roundrect (at -2 -2) (size 0.6 1.55) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
       (net 3 GNDPWR))
-    (model ${KISYS3DMOD}/Connector_JST.3dshapes/JST_SH_SM05B-SRSS-TB_1x05-1MP_P1.00mm_Horizontal.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/../3d/SM05B-SRSS-TB.STEP
+      (offset (xyz 0 1.27 -0.3048))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 

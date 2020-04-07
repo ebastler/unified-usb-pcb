@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name kicad-keyboard-parts)(type Legacy)(uri "${KIPRJMOD}/../kicad-keyboard-parts.pretty/Schematic Library/kicad-keyboard-parts.lib")(options "")(descr ""))
-  (lib (name unified-usb-pcb_batt-rescue)(type Legacy)(uri ${KIPRJMOD}/unified-usb-pcb_batt-rescue.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/../Type-C.pretty/Type-C.lib)(options "")(descr ""))
 )
