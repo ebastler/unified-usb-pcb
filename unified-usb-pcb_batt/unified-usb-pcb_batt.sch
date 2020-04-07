@@ -153,7 +153,7 @@ F 1 "USB_Out" H 5150 1950 50  0000 L CNN
 F 2 "Connector_JST:JST_SH_SM05B-SRSS-TB_1x05-1MP_P1.00mm_Horizontal" H 5350 2300 50  0001 C CNN
 F 3 "~" H 5350 2300 50  0001 C CNN
 	1    5350 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text GLabel 3400 1650 2    50   BiDi ~ 0
 USB_D-
@@ -469,8 +469,8 @@ $Comp
 L Device:R_Small R4
 U 1 1 5E9933A3
 P 4100 3500
-F 0 "R4" V 4000 3600 50  0000 C CNN
-F 1 "100" V 4200 3600 50  0000 C CNN
+F 0 "R4" V 4000 3500 50  0000 C CNN
+F 1 "100" V 4200 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 3500 50  0001 C CNN
 F 3 "~" H 4100 3500 50  0001 C CNN
 	1    4100 3500
@@ -481,12 +481,12 @@ VOUT
 $Comp
 L Device:CP_Small C2
 U 1 1 5E9A1A52
-P 3250 3700
-F 0 "C2" H 3000 3750 50  0000 L CNN
-F 1 "10u" H 3000 3600 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 3700 50  0001 C CNN
-F 3 "~" H 3250 3700 50  0001 C CNN
-	1    3250 3700
+P 3200 3700
+F 0 "C2" H 2950 3750 50  0000 L CNN
+F 1 "10u" H 2950 3600 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3200 3700 50  0001 C CNN
+F 3 "~" H 3200 3700 50  0001 C CNN
+	1    3200 3700
 	1    0    0    -1  
 $EndComp
 Connection ~ 3200 4450
@@ -578,7 +578,7 @@ L Device:Polyfuse_Small F3
 U 1 1 5EABBE64
 P 4850 2200
 F 0 "F3" V 4800 2350 50  0000 C CNN
-F 1 "1206L050/15YR" V 4600 2200 50  0000 C CNN
+F 1 "1206L050/15YR" V 5000 2250 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric" H 4900 2000 50  0001 L CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1810252220_Fuzetec-Tech-FSMD050-1206-R_C220147.pdf" H 4850 2200 50  0001 C CNN
 	1    4850 2200
@@ -669,16 +669,7 @@ Wire Wire Line
 	1800 4000 1650 4000
 Wire Wire Line
 	1800 3800 1800 4000
-Wire Wire Line
-	3700 3500 3300 3500
-Wire Wire Line
-	3300 3500 3300 3600
 Connection ~ 3700 3500
-Wire Wire Line
-	3300 3600 3250 3600
-Wire Wire Line
-	3250 3600 2550 3600
-Connection ~ 3250 3600
 Wire Wire Line
 	3000 4400 3000 4450
 Wire Wire Line
@@ -722,21 +713,21 @@ Wire Wire Line
 	3400 2300 3400 1850
 Connection ~ 2350 1900
 $Comp
-L kicad-keyboard-parts:TP4056 U?
+L kicad-keyboard-parts:TP4056 U3
 U 1 1 5E8F2E62
 P 2200 3850
-F 0 "U?" H 2175 4325 50  0000 C CNN
+F 0 "U3" H 2175 4325 50  0000 C CNN
 F 1 "TP4056" H 2175 4234 50  0000 C CNN
-F 2 "Package_SO:SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm" H 2150 4350 50  0001 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 2150 4350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1906261508_Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf" H 2150 4350 50  0001 C CNN
 	1    2200 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad-keyboard-parts:DW01A U?
+L kicad-keyboard-parts:DW01A U2
 U 1 1 5E8F46BF
 P 5050 3700
-F 0 "U?" H 5050 4125 50  0000 C CNN
+F 0 "U2" H 5050 4125 50  0000 C CNN
 F 1 "DW01A" H 5050 4034 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4850 4050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Fortune-Semicon-DW01A-G_C61503.pdf" H 4850 4050 50  0001 C CNN
@@ -744,10 +735,10 @@ F 3 "https://datasheet.lcsc.com/szlcsc/Fortune-Semicon-DW01A-G_C61503.pdf" H 485
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad-keyboard-parts:FS8205 U?
+L kicad-keyboard-parts:FS8205 U4
 U 1 1 5E8F556E
 P 4550 4200
-F 0 "U?" H 4550 4525 50  0000 C CNN
+F 0 "U4" H 4550 4525 50  0000 C CNN
 F 1 "FS8205" H 4550 4434 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4500 4450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Fortune-Semicon-FS8205_C32254.pdf" H 4500 4450 50  0001 C CNN
@@ -755,17 +746,16 @@ F 3 "https://datasheet.lcsc.com/szlcsc/Fortune-Semicon-FS8205_C32254.pdf" H 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_SPDT SW?
+L Switch:SW_SPDT SW1
 U 1 1 5E8F7463
 P 3500 3700
-F 0 "SW?" H 3500 3375 50  0000 C CNN
+F 0 "SW1" H 3500 3375 50  0000 C CNN
 F 1 "SW_SPDT" H 3500 3466 50  0000 C CNN
 F 2 "kicad-keyboard-parts:ESP3020" H 3500 3700 50  0001 C CNN
 F 3 "https://www.ece.com.tw/images/cgcustom/file020190722095856.pdf" H 3500 3700 50  0001 C CNN
 	1    3500 3700
 	-1   0    0    1   
 $EndComp
-Connection ~ 3300 3600
 Wire Wire Line
 	4200 3750 4200 4100
 Wire Wire Line
@@ -776,12 +766,21 @@ Connection ~ 4200 4100
 Wire Wire Line
 	3200 4450 3650 4450
 Wire Wire Line
-	3250 3950 3650 3950
-Wire Wire Line
 	3650 3950 3650 4450
-Wire Wire Line
-	3250 3800 3250 3950
 Connection ~ 3650 4450
 Wire Wire Line
 	3650 4450 4250 4450
+Connection ~ 3200 3600
+Wire Wire Line
+	3200 3600 2550 3600
+Wire Wire Line
+	3200 3950 3200 3800
+Wire Wire Line
+	3200 3600 3300 3600
+Wire Wire Line
+	3200 3950 3650 3950
+Wire Wire Line
+	3200 3500 3200 3600
+Wire Wire Line
+	3200 3500 3700 3500
 $EndSCHEMATC
