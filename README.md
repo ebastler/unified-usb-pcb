@@ -6,8 +6,6 @@ None of the designs in this repo are tested (or even finished) yet. It is curren
 TBD:
  * Supercap PCB: create schematic
  * Supercap PCB: create PCB layout
- * USB PCB: create schematic
- * USB PCB: create PCB layout
  * ?
 ___
 
