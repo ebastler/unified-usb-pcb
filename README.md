@@ -15,11 +15,13 @@ A collection of 3 compatible USB-C (2.0) daughterboards with different capabilit
 
 ### [Li-Ion PCB](unified-usb-pcb_batt)
 This PCB is intended for true wireless use of the keyboard, giving hours of autonomous operation (if a sufficiently large battery is chosen). The battery can be recharged either using the USB-C connector (which can also be used for data) or a QI receiver built into the keyboards base.
- * USB type C and JST SH 2-pin header for QI as a power source, OR-ed together using Schottky Diodes
+ * USB type C
+ * JST SH 2-pin input for QI Receiver
  * SRV-05 TVS on the USB data lines for ESD protection
  * JST SH 2-pin header to connect a single Li-Ion or Li-Poly cell
- * TP4056 as a battery charger, DW01 for protection. An additional JST SH 2-pin header allows fo the use of a thermistor to measure cell temperature
- * An additional sense-wire allows the main controller to check if the battery is currently being charged
+ * TP4056 as a battery charger, DW01 for protection
+ * A JST SH 2-pin header allows fo the use of a thermistor to measure cell temperature
+ * A sense-wire allows the main controller to check if the battery is currently being charged
  * Solder jumpers to bridge the USB Schottky if no QI receiver is used, as well as the thermistor if the user chooses to use the battery without thermal protection
  * 5 pin JST SH header connecting to the main keyboard PCB
 
