@@ -21,5 +21,5 @@ This PCB is intended for true wireless use of the keyboard, giving hours of auto
  * Connector J4: Battery connector, JST SH (SMD, horizontal, 2 Pins. Pin1: GND, Pin2: Positive)
  * Connector J5: Battery thermistor, JST SH (SMD, horizontal, 2 Pins. Pin1: signal, Pin2: GND (not needed for 3 wire batteries))
  * Jumper JP1: Bridge if no QI is intended to avoid losses over the USB Schottky
- * Jumper JP2: Bridge if you are using an unsupported or no thermistor
+ * Jumper JP2: Bridge if you are using an unsupported or no thermistor (the PCB is designed for 10k with a beta of ~ 3500-4000)
  * Switch SW1: Power-switch to cut the battery. [ECE ESP3020](https://www.ece.com.tw/en/switches/slide-switch/56). May be hard to source, but I could not find any similar part that suited this application.
