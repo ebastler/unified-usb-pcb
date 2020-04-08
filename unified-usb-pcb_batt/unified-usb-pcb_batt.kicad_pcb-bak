@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 7)
     (tracks 100)
     (zones 0)
     (modules 34)
@@ -327,7 +327,7 @@
   )
 
   (module kicad-keyboard-parts:ESP3020 (layer B.Cu) (tedit 5E8CD3C0) (tstamp 5E8D8BDB)
-    (at 39.751 26.67 180)
+    (at 39.878 24.13 180)
     (descr "ECE ESP3020 SMD slide switch")
     (tags "slide switch smd ece")
     (path /5E8F7463)
@@ -354,7 +354,7 @@
       (net 21 "Net-(J4-Pad1)"))
     (pad 1 smd rect (at 1.7 2.54 180) (size 3.5 1.5) (layers B.Cu B.Paste B.Mask)
       (net 31 "Net-(SW1-Pad1)"))
-    (model ${KIPRJMOD}/../3d/ESP3020.step
+    (model ${KIPRJMOD}/../kicad-keyboard-parts.pretty/ESP3020.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -859,7 +859,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5E8D9049)
-    (at 39.37 26.797 90)
+    (at 39.1795 24.257 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5E8CFECB)
@@ -895,7 +895,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5E8D95E2)
-    (at 41.275 26.797 90)
+    (at 41.0845 24.257 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5E89839E)
@@ -931,7 +931,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5E884E5D)
-    (at 37.465 26.797 90)
+    (at 37.2745 24.257 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5E8CD650)
@@ -1373,7 +1373,7 @@
   )
 
   (module LED_SMD:LED_0603_1608Metric_Castellated (layer F.Cu) (tedit 5B301BBE) (tstamp 5E87E704)
-    (at 39.37 23.3172 90)
+    (at 39.1795 20.7772 90)
     (descr "LED SMD 0603 (1608 Metric), castellated end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED castellated")
     (path /5E8D541F)
@@ -1411,7 +1411,7 @@
   )
 
   (module LED_SMD:LED_0603_1608Metric_Castellated (layer F.Cu) (tedit 5B301BBE) (tstamp 5E8D910B)
-    (at 37.465 23.3172 90)
+    (at 37.2745 20.7772 90)
     (descr "LED SMD 0603 (1608 Metric), castellated end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags "LED castellated")
     (path /5E8D30E5)
@@ -1567,6 +1567,14 @@
     )
   )
 
+  (gr_line (start 46.482 18.288) (end 49.276 17.78) (layer Edge.Cuts) (width 0.05) (tstamp 5E8D0979))
+  (gr_line (start 26.416 18.288) (end 46.482 18.288) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 17.78 18.288) (end 17.272 17.78) (layer Edge.Cuts) (width 0.05) (tstamp 5E8D0978))
+  (gr_line (start 26.416 18.288) (end 17.78 18.288) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 15.748 45.72) (end 17.272 17.78) (layer Edge.Cuts) (width 0.05) (tstamp 5E8DD3AD))
+  (gr_line (start 49.53 45.974) (end 15.748 45.72) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 49.276 17.78) (end 49.53 45.974) (layer Edge.Cuts) (width 0.05))
+
   (segment (start 26.6955 29.972) (end 26.2255 30.442) (width 0.254) (layer F.Cu) (net 3))
   (segment (start 28.1989 29.972) (end 26.6955 29.972) (width 0.254) (layer F.Cu) (net 3))
   (via (at 34.036 27.686) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 3))
@@ -1593,9 +1601,9 @@
   (segment (start 27.94 32.512) (end 26.924 31.496) (width 0.254) (layer B.Cu) (net 3))
   (segment (start 34.337 35.2105) (end 34.2265 35.321) (width 0.508) (layer F.Cu) (net 5))
   (segment (start 37.7825 35.2105) (end 34.337 35.2105) (width 0.508) (layer F.Cu) (net 5))
-  (segment (start 37.465 22.5047) (end 39.37 22.5047) (width 0.254) (layer F.Cu) (net 5))
-  (segment (start 41.275 24.4097) (end 41.275 26.0095) (width 0.254) (layer F.Cu) (net 5))
-  (segment (start 39.37 22.5047) (end 41.275 24.4097) (width 0.254) (layer F.Cu) (net 5))
+  (segment (start 37.2745 19.9647) (end 39.1795 19.9647) (width 0.254) (layer F.Cu) (net 5))
+  (segment (start 41.0845 21.8697) (end 41.0845 23.4695) (width 0.254) (layer F.Cu) (net 5))
+  (segment (start 39.1795 19.9647) (end 41.0845 21.8697) (width 0.254) (layer F.Cu) (net 5))
   (segment (start 26.227 35.321) (end 26.162 35.386) (width 0.508) (layer F.Cu) (net 5))
   (segment (start 34.2265 35.321) (end 26.227 35.321) (width 0.508) (layer F.Cu) (net 5))
   (segment (start 26.162 38.322) (end 26.162 35.386) (width 0.508) (layer F.Cu) (net 5))
@@ -1609,8 +1617,8 @@
   (segment (start 34.2265 34.021) (end 34.2265 33.3659) (width 0.508) (layer F.Cu) (net 6))
   (segment (start 19.844 38.446) (end 21.206 37.084) (width 0.508) (layer F.Cu) (net 7))
   (segment (start 19.844 40.64) (end 19.844 38.446) (width 0.508) (layer F.Cu) (net 7))
-  (segment (start 37.465 24.1297) (end 37.465 26.0095) (width 0.254) (layer F.Cu) (net 8))
-  (segment (start 39.37 24.1297) (end 39.37 26.0095) (width 0.254) (layer F.Cu) (net 9))
+  (segment (start 37.2745 21.5897) (end 37.2745 23.4695) (width 0.254) (layer F.Cu) (net 8))
+  (segment (start 39.1795 21.5897) (end 39.1795 23.4695) (width 0.254) (layer F.Cu) (net 9))
   (via (at 27.927785 27.649784) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 10))
   (via (at 33.02 27.686) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 10))
   (segment (start 28.3094 27.268169) (end 27.927785 27.649784) (width 0.508) (layer F.Cu) (net 10))
@@ -1666,6 +1674,6 @@
   (segment (start 27.560999 23.852299) (end 33.957801 23.852299) (width 0.254) (layer F.Cu) (net 19))
   (segment (start 26.4394 24.973898) (end 27.560999 23.852299) (width 0.254) (layer F.Cu) (net 19))
   (segment (start 26.4394 25.0248) (end 26.4394 24.973898) (width 0.254) (layer F.Cu) (net 19))
-  (segment (start 39.37 27.5845) (end 41.275 27.5845) (width 0.254) (layer F.Cu) (net 20))
+  (segment (start 39.1795 25.0445) (end 41.0845 25.0445) (width 0.254) (layer F.Cu) (net 20))
 
 )
