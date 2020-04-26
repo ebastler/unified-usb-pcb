@@ -297,7 +297,6 @@ F 3 "" H 5900 2200 50  0001 C CNN
 	1    5900 2250
 	1    0    0    -1  
 $EndComp
-Connection ~ 6000 2250
 Wire Notes Line style solid
 	5750 700  5750 2850
 Wire Notes Line style solid
@@ -346,10 +345,10 @@ Connection ~ 5100 2500
 Wire Wire Line
 	5100 2500 5150 2500
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0102
 U 1 1 5EBED781
 P 800 2600
-F 0 "#PWR?" H 800 2350 50  0001 C CNN
+F 0 "#PWR0102" H 800 2350 50  0001 C CNN
 F 1 "Earth" H 800 2450 50  0001 C CNN
 F 2 "" H 800 2600 50  0001 C CNN
 F 3 "~" H 800 2600 50  0001 C CNN
@@ -357,17 +356,9 @@ F 3 "~" H 800 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 800  2600
-$Comp
-L power:Earth #PWR?
-U 1 1 5EBEE999
-P 5900 1650
-F 0 "#PWR?" H 5900 1400 50  0001 C CNN
-F 1 "Earth" H 5900 1500 50  0001 C CNN
-F 2 "" H 5900 1650 50  0001 C CNN
-F 3 "~" H 5900 1650 50  0001 C CNN
-	1    5900 1650
-	1    0    0    -1  
-$EndComp
-Connection ~ 5900 1650
 Connection ~ 5900 2250
+Wire Wire Line
+	5900 1650 5900 1950
+Connection ~ 5900 1650
+Connection ~ 5900 1950
 $EndSCHEMATC
