@@ -1,7 +1,7 @@
 # Unified USB type-C PCB
 
 ## This is a work in progress - do not expect anything in this repo to be working and/or complete yet!
-None of the designs in this repo are tested (or even finished) yet. It is currently only used as a backup of the work in progress.
+Simple and battery PCB prototypes are ordered. Supercap PCB may or may not follow after some testing.
 
 TBD:
  * Supercap PCB: create schematic
@@ -10,6 +10,16 @@ TBD:
 ___
 
 A collection of 3 compatible USB-C (2.0) daughterboards with different capabilities, intended to be used in custom mechanical keyboards. All three feature the same mechanical dimensions and mounting holes, as well as the same connector leading to the main keyboard PCB and can therefore be exchanged depending on the requeirements.
+
+|![simple](unified-usb-pcb_simple/render/unified-usb-pcb_simple_v1.png)|![batt](unified-usb-pcb_batt/render/unified-usb-pcb_batt_v1.png)|
+|:----------------------------------------:|:----------------------------------------:|
+|Simple PCB |Battery PCB|
+
+### [Plain USB PCB](unified-usb-pcb_simple)
+The simplest and cheapest of the three is just a plain USB breakout board, connecting a USB type C receptacle to a JST SH header for the main keyboard.
+ * USB type C
+ * SRV-05 TVS on the USB data lines for ESD protection
+ * 5 pin JST SH header connecting to the main keyboard PCB
 
 ### [Li-Ion PCB](unified-usb-pcb_batt)
 This PCB is intended for true wireless use of the keyboard, giving hours of autonomous operation (if a sufficiently large battery is chosen). The battery can be recharged either using the USB-C connector (which can also be used for data) or a QI receiver built into the keyboards base.
@@ -30,9 +40,3 @@ This PCB is intended for people who don't want wires cluttering their desk, but 
  * SRV-05 TVS on the USB data lines for ESD protection
  * JST SH 3-pin header to connect 2 supercaps (both in series)
  * Solder jumper to bridge the USB Schottky if no QI receiver is used
-
-### [Plain USB PCB](unified-usb-pcb_simple)
-The simplest and cheapest of the three is just a plain USB breakout board, connecting a USB type C receptacle to a JST SH header for the main keyboard.
- * USB type C
- * SRV-05 TVS on the USB data lines for ESD protection
- * 5 pin JST SH header connecting to the main keyboard PCB
