@@ -1,7 +1,7 @@
 (kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
-    (thickness 1.6)
+    (thickness 1)
     (drawings 11)
     (tracks 82)
     (zones 0)
