@@ -1,7 +1,7 @@
 # Unified USB type-C PCB
 
 ## This is a work in progress - do not expect anything in this repo to be working and/or complete yet!
-Simple and battery PCB prototypes are ordered. Supercap PCB may or may not follow after some testing.
+Simple PCB works, battery PCB is broken. Schematic has been fixed, PCB not. Fix will follow once I find time.
 
 A collection of 3 compatible USB-C (2.0) daughterboards with different capabilities, intended to be used in custom mechanical keyboards. All three feature the same mechanical dimensions and mounting holes, as well as the same connector leading to the main keyboard PCB and can therefore be exchanged depending on the requeirements.
 

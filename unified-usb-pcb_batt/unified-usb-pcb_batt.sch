@@ -557,10 +557,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 3500 4650 3500
 Connection ~ 4650 3500
-Wire Wire Line
-	3700 3350 3700 3500
-Wire Wire Line
-	4000 3500 3700 3500
 Wire Notes Line style solid
 	550  700  550  2850
 Wire Notes Line style solid
@@ -697,7 +693,6 @@ Wire Wire Line
 	1800 4000 1650 4000
 Wire Wire Line
 	1800 3800 1800 4000
-Connection ~ 3700 3500
 Wire Wire Line
 	3000 4400 3000 4450
 Wire Wire Line
@@ -776,18 +771,6 @@ F 4 "C32254" H 4550 4200 50  0001 C CNN "LCSC"
 	1    4550 4200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 5E8F7463
-P 3500 3700
-F 0 "SW1" H 3500 3375 50  0000 C CNN
-F 1 "SW_SPDT" H 3500 3466 50  0000 C CNN
-F 2 "kicad-keyboard-parts:ESP3020" H 3500 3700 50  0001 C CNN
-F 3 "https://www.ece.com.tw/images/cgcustom/file020190722095856.pdf" H 3500 3700 50  0001 C CNN
-F 4 "/" H 3500 3700 50  0001 C CNN "LCSC"
-	1    3500 3700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4200 3750 4200 4100
 Wire Wire Line
@@ -808,13 +791,9 @@ Wire Wire Line
 Wire Wire Line
 	3200 3950 3200 3800
 Wire Wire Line
-	3200 3600 3300 3600
-Wire Wire Line
 	3200 3950 3650 3950
 Wire Wire Line
 	3200 3500 3200 3600
-Wire Wire Line
-	3200 3500 3700 3500
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5E8DE6EE
@@ -931,4 +910,42 @@ $EndComp
 Connection ~ 5100 2500
 Wire Wire Line
 	5100 2500 5050 2500
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5E8F7463
+P 3500 3350
+F 0 "SW1" H 2900 3400 50  0000 C CNN
+F 1 "SW_SPDT" H 2850 3500 50  0000 C CNN
+F 2 "kicad-keyboard-parts:ESP3020" H 3500 3350 50  0001 C CNN
+F 3 "https://www.ece.com.tw/images/cgcustom/file020190722095856.pdf" H 3500 3350 50  0001 C CNN
+F 4 "/" H 3500 3350 50  0001 C CNN "LCSC"
+	1    3500 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3500 4000 3500
+Wire Wire Line
+	3700 3600 3700 3700
+Wire Wire Line
+	3200 3600 3700 3600
+Wire Wire Line
+	3300 3450 3200 3450
+Wire Wire Line
+	3200 3450 3200 3500
+Connection ~ 3200 3500
+$Comp
+L power:+5V #PWR?
+U 1 1 5F5849B8
+P 3050 3300
+F 0 "#PWR?" H 3050 3150 50  0001 C CNN
+F 1 "+5V" H 3150 3400 50  0000 C CNN
+F 2 "" H 3050 3300 50  0001 C CNN
+F 3 "" H 3050 3300 50  0001 C CNN
+	1    3050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3300 3300 3300
+Wire Wire Line
+	3300 3300 3300 3250
 $EndSCHEMATC
