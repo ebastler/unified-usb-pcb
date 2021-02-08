@@ -111,7 +111,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 1100 2850 1250
 Wire Wire Line
-	1950 1100 2850 1100
+	1950 1100 2350 1100
 $Comp
 L power:GNDPWR #PWR06
 U 1 1 5E891102
@@ -632,42 +632,10 @@ F 3 "" H 4350 2450 50  0001 C CNN
 	1    4350 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 4600 2100 0    50   Input ~ 0
-chgsense
 Wire Wire Line
 	4600 2100 5150 2100
-$Comp
-L Device:R_Small R6
-U 1 1 5E89839E
-P 850 3900
-F 0 "R6" V 750 4000 50  0000 C CNN
-F 1 "10k" V 750 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 850 3900 50  0001 C CNN
-F 3 "~" H 850 3900 50  0001 C CNN
-F 4 "C25804" H 850 3900 50  0001 C CNN "LCSC"
-	1    850  3900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	850  4000 850  4050
-Wire Wire Line
-	850  4050 1100 4050
-Connection ~ 1100 4050
-Wire Wire Line
-	850  3800 850  3600
-Wire Wire Line
-	850  3600 1100 3600
 Wire Wire Line
 	650  4150 1800 4150
-Wire Wire Line
-	850  3600 650  3600
-Connection ~ 850  3600
-Text GLabel 1050 4250 0    50   Output ~ 0
-chgsense
-Wire Wire Line
-	1050 4250 1100 4250
-Wire Wire Line
-	1100 4250 1100 4050
 Wire Notes Line style solid
 	550  3150 5550 3150
 Wire Notes Line style solid
@@ -948,4 +916,17 @@ Wire Wire Line
 	3050 3300 3300 3300
 Wire Wire Line
 	3300 3300 3300 3250
+Wire Wire Line
+	650  3600 1100 3600
+Text GLabel 2450 1000 2    50   Output ~ 0
+VBUS
+Wire Wire Line
+	2450 1000 2350 1000
+Wire Wire Line
+	2350 1000 2350 1100
+Connection ~ 2350 1100
+Wire Wire Line
+	2350 1100 2850 1100
+Text GLabel 4600 2100 0    50   Input ~ 0
+VBUS
 $EndSCHEMATC
