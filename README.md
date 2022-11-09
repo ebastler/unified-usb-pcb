@@ -5,7 +5,7 @@ Simple PCB works, battery PCB is broken. Schematic has been fixed, PCB not. Fix 
 
 A collection of 3 compatible USB-C (2.0) daughterboards with different capabilities, intended to be used in custom mechanical keyboards. All three feature the same mechanical dimensions and mounting holes, as well as the same connector leading to the main keyboard PCB and can therefore be exchanged depending on the requeirements.
 
-|![simple](unified-usb-pcb_simple/render/unified-usb-pcb_simple_v1.png)|![batt](unified-usb-pcb_batt/render/unified-usb-pcb_batt_v1.png)|
+|![simple](unified-usb-pcb_simple/render/unified-usb-pcb_simple-.top.png)|![batt](unified-usb-pcb_batt/render/unified-usb-pcb_batt-.top.png)|
 |:----------------------------------------:|:----------------------------------------:|
 |Simple PCB |Battery PCB|
 
@@ -26,11 +26,3 @@ This PCB is intended for true wireless use of the keyboard, giving hours of auto
  * A sense-wire allows the main controller to check if the battery is currently being charged
  * Solder jumpers to bridge the USB Schottky if no QI receiver is used, as well as the thermistor if the user chooses to use the battery without thermal protection
  * 5 pin JST SH header connecting to the main keyboard PCB
-
-### [Supercap PCB](unified-usb-pcb_cap)
-
-This PCB is intended for people who don't want wires cluttering their desk, but do not intend to use the keyboard on the go or in multiple locations. It needs a QI coil below the deskmat in order to work, the capacitor is only used to buffer short outages or power surges.
- * USB type C and JST SH 2-pin header for QI as a power source, OR-ed together using Schottky Diodes
- * SRV-05 TVS on the USB data lines for ESD protection
- * JST SH 3-pin header to connect 2 supercaps (both in series)
- * Solder jumper to bridge the USB Schottky if no QI receiver is used

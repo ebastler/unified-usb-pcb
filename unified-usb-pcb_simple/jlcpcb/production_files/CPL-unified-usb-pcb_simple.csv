@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+F1,SCF075-1206R,Fuse_1206_3216Metric,18.302,17.808,90.0,top
+J1,USB_C_Receptacle_USB2.0,USB_C_Receptacle_HRO_TYPE-C-31-M-12,15.0,26.35,180.0,top
+J2,USB_Out,JST_SH_SM05B-SRSS-TB_1x05-1MP_P1.00mm_Horizontal,15.0,-1.7,0.0,top
+L1,PBY160808T-181Y-N,L_0603_1608Metric,12.968,4.6,90.0,top
+R1,5.1k,R_0603_1608Metric,21.223,21.237,90.0,top
+R2,5.1k,R_0603_1608Metric,8.8405,21.237,90.0,top
+U1,SRV05-4,SOT-23-6,15.0,18.316,0.0,top
