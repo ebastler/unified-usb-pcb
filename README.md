@@ -1,9 +1,10 @@
 # Unified USB type-C PCB
 
-## This is a work in progress - do not expect anything in this repo to be working and/or complete yet!
-Simple PCB works, battery PCB is broken. Schematic has been fixed, PCB not. Fix will follow once I find time.
+## Changelog
+* 22.11.2020: Simple PCB works, battery PCB is broken. Schematic has been fixed, PCB not. Fix will follow once I find time.
+* 09.11.2022: Battery PCB should be fixed, but is untested - I applied the same modifications I previously bodge-wired to earlier protos. The simple PCB now also outputs 5V on the VBUS sense pin, allowing the ZMK Isometria to work with it. I also re-created production files since jlcpcb capabilities increased and they can now assemble everything on these boards. The project is mostly considered abandoned, as I moved to including all battery related circuitry on the main keyboard PCB by now. Still wanted to fix this old project of mine.
 
-A collection of 3 compatible USB-C (2.0) daughterboards with different capabilities, intended to be used in custom mechanical keyboards. All three feature the same mechanical dimensions and mounting holes, as well as the same connector leading to the main keyboard PCB and can therefore be exchanged depending on the requeirements.
+A collection of compatible USB-C (2.0) daughterboards with different capabilities, intended to be used in custom mechanical keyboards. All feature the same mechanical dimensions and mounting holes, as well as the same connector leading to the main keyboard PCB and can therefore be exchanged depending on the requeirements.
 
 |![simple](unified-usb-pcb_simple/render/unified-usb-pcb_simple-.top.png)|![batt](unified-usb-pcb_batt/render/unified-usb-pcb_batt-.top.png)|
 |:----------------------------------------:|:----------------------------------------:|
